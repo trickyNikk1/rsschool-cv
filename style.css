@@ -2,18 +2,59 @@
     font-family: 'Ubuntu Mono';
     src: url(assets/fonts/UbuntuMono-Regular.ttf);
     font-weight: 400;
+    src: local('Ubuntu Mono');
 }
 @font-face {
     font-family: 'Ubuntu Mono';
     src: url(assets/fonts/UbuntuMono-Bold.ttf);
     font-weight: 700;
+    src: local('Ubuntu Mono');
 }
-.page{
+* {
+    box-sizing: border-box;
+}
+.page {
+    font-family: 'Ubuntu Mono', sans-serif;
+    scroll-behavior: smooth; 
+}
+.body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
+}
+.header {
+    overflow: auto;
+}
+.nav {
+    overflow: auto;
+}
+.nav_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media (min-width: 800px) {
+    .nav_list {
+        justify-content: center;
+    }    
+}
+.nav_item {
+    background-color: teal;
+    border-left: solid 2px white;
+}
+.nav_link{
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    text-wrap: nowrap;
+    color: white;
 }
