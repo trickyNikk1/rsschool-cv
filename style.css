@@ -29,11 +29,12 @@
 }
 .header {
     overflow: auto;
+    background-color: teal;
 }
 .nav {
     overflow: auto;
 }
-.nav_list {
+.nav__list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -43,18 +44,40 @@
 }
 
 @media (min-width: 800px) {
-    .nav_list {
+    .nav__list {
         justify-content: center;
     }    
 }
-.nav_item {
+.nav__item {
     background-color: teal;
     border-left: solid 2px white;
+
 }
-.nav_link{
+.nav__link{
     padding: 0 20px;
     line-height: 50px;
     text-decoration: none;
     text-wrap: nowrap;
     color: white;
+}
+.footer {
+
+}
+.footer__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+}
+.footer__github-logo {
+    width: 50px;
+    height: 50px;
+}
+.footer__rs-logo{
+    width: 130px;
+    height: 80px;
+}
+.footer__year {
+    font-size: 32px;
+    font-weight: 700;
 }
