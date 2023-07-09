@@ -10,6 +10,8 @@
     font-weight: 700;
     src: local('Ubuntu Mono');
 }
+
+
 * {
     box-sizing: border-box;
 }
@@ -17,23 +19,32 @@
     font-family: 'Ubuntu Mono', sans-serif;
     scroll-behavior: smooth; 
 }
+.page::-webkit-scrollbar {
+    display: none;
+  }
+
 .body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 .header {
-    overflow: auto;
-    background-color: teal;
+    background-color: #8B9D77;
 }
+
 .nav {
     overflow: auto;
 }
+.nav::-webkit-scrollbar {
+    display: none;
+  }
 .nav__list {
     list-style: none;
     padding: 0;
@@ -42,15 +53,14 @@
     display: flex;
     flex-wrap: nowrap;
 }
-
 @media (min-width: 800px) {
     .nav__list {
         justify-content: center;
     }    
 }
 .nav__item {
-    background-color: teal;
-    border-left: solid 2px white;
+    background-color: #8B9D77;
+    border-left: solid 2px  #E7EAEF;
 
 }
 .nav__link{
@@ -58,8 +68,10 @@
     line-height: 50px;
     text-decoration: none;
     text-wrap: nowrap;
-    color: white;
+    color: #E7EAEF;
 }
+
+
 .footer {
 
 }
@@ -80,4 +92,121 @@
 .footer__year {
     font-size: 32px;
     font-weight: 700;
+}
+
+
+.main__content {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 28px;
+}
+@media (min-width: 600px){
+    .main__content {
+        padding: 40px;
+    }
+}
+
+.personal {
+    max-width: 100%;
+}
+@media (min-width: 1200px) {
+    .personal {
+        max-width: 35%;
+    }
+}
+@media (min-width: 800px) {
+    .personal {
+        max-width: 50%;
+    }
+}
+
+.personal__intro {
+    display: flex;
+    flex-direction: column;
+}
+.personal__title {
+    margin: 0 0 20px 0;
+}
+.personal__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #8B9D77;
+    border-radius: 3px;
+    margin: 0 0 20px 0;
+}
+.personal__text {
+    margin: 0 0 20px 0;
+}
+.intro__photo {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    border: 10px solid #8B9D77;
+    border-radius: 50%;
+}
+@media (min-width: 600px) and (max-width:1100px) {
+    .intro__photo {
+        max-width: 90%;
+    }
+}
+
+
+.intro__name {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.intro__second-name {
+    font-weight: 400;
+}
+.intro__front {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0,0,0,0.5);
+}
+.personal__text {
+    text-indent: 30px;
+    line-height: 36px;
+}
+.contacts {
+
+}
+.contacts__list {
+    list-style: none;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+.contacts__item {
+    padding: 5px 15px 5px 5px;
+}
+
+.contacts__link {
+    position: relative;
+    text-decoration: none;
+    color:black ;
+}
+.contacts__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+
+}
+.email {
+    word-wrap: break-word;
+}
+.email::before {
+    background: no-repeat url('assets/img/Gmail_icon_\(2020\).svg');
+}
+.phone::before {
+    background: no-repeat url('assets/img/phone-call-telephone-svgrepo-com.svg');
+}
+.discord::before {
+    background: purple;
 }
