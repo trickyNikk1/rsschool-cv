@@ -17,7 +17,6 @@ I believe that IT sphere is our present and our future. I'm ready to learn as mu
 ## Skills
 I had short experience in WEB. I know as base as HTML, CSS and JS on the newbie level. I know about Git and GitHub. But still don't have enough practice.
 
-
 ## Code Examples
 **Code wars profile:**https://www.codewars.com/users/NikkitOOOsss  
 **Last kata:**  

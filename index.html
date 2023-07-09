@@ -1,10 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="page" lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/Peter.ico">
 </head>
-<body>
+
+<body class="body">
+    <header class="header">
+        <div class="container">  
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#about">
+                            About me
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contacts">
+                            Contact me
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#code-examples">
+                            Code Example
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a class="nav__link" href="#experience">
+                            Experience
+                        </a>
+                    </li>
+                
+                    <li class="nav__item">
+                        <a class="nav__link" href="#education">
+                            Education
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a class="nav__link" href="#work-experience">
+                            Work experience
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#lang-skills">
+                            Languages
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="container main__content">
+            <div class="personal">
+                <section class="personal__section intro">
+                    <img class="intro__photo" src="assets/img/Peter.webp" alt="my photo">
+                    <h1 class="intro__name">
+                        Nikita <span class="intro__second-name">Aristarkhov</span> 
+                        <br>
+                        <span class="intro__front">Frontend Developer</span>
+                    </h1>
+                </section>
+                <section class="personal__section about" id="about">
+                    <h2 class="personal__title">
+                        About me
+                    </h2>
+                    <p class="personal__text">
+                        I'm just at the beginning of my journey as a developer and consider it one of the most promising areas of development. I love to learn new things, can google and use ChatGPT for most everyday tasks. I've improved my English to B1-B2 level by communicating with native speakers, reading comics and articles, and watching soap operas in the original language. I am an extrovert, ready to help. Easy to make conversation and find common ground with new people. I have critical thinking skills. 
+                    </p>
+                </section>
+                <section class="personal__section contacts" id="contacts">
+                    <h2 class="personal__title">
+                        Contact me
+                    </h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a class="contacts__link email" href="mailto:aristarhovnikita1@gmail.com">
+                                aristarhovnikita1@gmail.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link phone" href="tel:+79045562294">
+                                +7(904)556-2294
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link discord" href="https://discord.gg/CcHsM8M65w">
+                                Discord: siberian_kit
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="work">
+                <section class="work__section" id="skills">
+                    <h2 class="work__title">
+                        Skills
+                    </h2>
+                    <ul class="work__list">
+                        <li class="work__item">
+                            HTML
+                        </li>
+                        <li class="work__item">
+                            CSS
+                        </li>
+                        <li class="work__item">
+                            JS
+                        </li>
+                        <li class="work__item">
+                            Git and GitHub
+                        </li>
+                        <li class="work__item">
+                            Figma
+                        </li>
+                    </ul>
+                </section>
+                <section class="work__section" id="code-examples">
+                    <h2 class="work__title">
+                        Code examples
+                    </h2>
+                    <a class="work__link" href="https://www.codewars.com/users/NikkitOOOsss">
+                        My CodeWars profile.
+                    </a>
+                    <h3 class="title">One of my Katas from the site:</h3>
+                    <code class="work__code">
+                        function removeSmallest(numbers) {
+                            let numbersCopy = numbers.slice();
+                            let min = Math.min(...numbersCopy);
+                            let index = numbersCopy.indexOf(min);
+                            numbersCopy.splice(index, 1);
+                            return numbersCopy;
+                          }
+                    </code>
+                </section>
+                <section class="work__section" id="education">
+                    <h2 class="work__title">
+                        Education
+                    </h2>
+                    <ul class="work__list">
+                        <li class="work__item">
+                            Incomplete Higher Architectural Education
+                        </li>
+                        <li class="work__item">
+                            JavaScript Course on code-basics.com
+                        </li>
+                        <li class="work__item">
+                            Introduction to programming course on hexlet.io
+                        </li>
+                        <li class="work__item">
+                            HTML and CSS courses on htmlacademy.ru  
+                        </li>
+                    </ul>
+                </section>
+                <section class="work__section" id="work-experience">
+                    <h2 class="work__title">
+                        Work experience
+                    </h2>
+                    <p class="work__text">
+                        This CV is my first work. I made it only by CSS HTML and Git.
+                    </p>
+                </section>
+                <section class="work__section" id="lang-skills">
+                    <h2 class="work__title">
+                        Language skills
+                    </h2>
+                    <ul class="work__list">
+                        <li class="work__item">
+                            English(B2)
+                        </li>
+                        <li class="work__item">
+                            Russian(native)
+                        </li>
+                    </ul>
+                    <p class="work__text">
+                        I was in love with a comic books and animation. Most of my fav stories was only in English or just looked and sounded better in the original. So I have no choice. A lot of time after I met some friends who was also native speakers from another countries. We had the face-time calls on the weekends so I had a lot of time to improve my skills just a bit. Now half of information(memes, articles, youtube videos and etc.) which I consume in English.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <a href="https://github.com/trickyNikk1">
+                <img class="footer__github-logo" src="assets/img/iconmonstr-github-1.svg" alt="GitHub logo">
+            </a>
+            <time class="footer__year" datetime="2023">
+                2023
+            </time>
+            <a href="https://rs.school/js/">
+                <img class="footer__rs-logo" src="assets/img/rs_school_js.svg" alt="RSSchool logo">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
