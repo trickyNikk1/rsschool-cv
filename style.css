@@ -73,7 +73,9 @@
 
 
 .footer {
-
+    background-color: #E7EAEF;
+    border-top: 3px solid #ffffff;
+    border-radius: 10px;
 }
 .footer__content {
     display: flex;
@@ -96,19 +98,20 @@
 
 
 .main__content {
-    padding: 40px 24px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 28px;
 }
-@media (min-width: 600px){
+
+@media (min-width: 800px) {
     .main__content {
-        padding: 40px;
+        flex-wrap: nowrap;
     }
 }
 
 .personal {
+    margin-top: 40px;
     max-width: 100%;
 }
 @media (min-width: 1200px) {
@@ -127,7 +130,9 @@
     flex-direction: column;
 }
 .personal__title {
+    font-size: 36px;
     margin: 0 0 20px 0;
+    text-transform: uppercase;
 }
 .personal__section {
     display: flex;
@@ -135,11 +140,14 @@
     align-items: center;
     border-bottom: 3px solid #8B9D77;
     border-radius: 3px;
-    margin: 0 0 20px 0;
+    margin: 0 30px 20px 30px;
 }
 .personal__text {
     margin: 0 0 20px 0;
+    text-indent: 30px;
+    line-height: 36px;
 }
+
 .intro__photo {
     display: block;
     margin: 0 auto;
@@ -149,15 +157,14 @@
 }
 @media (min-width: 600px) and (max-width:1100px) {
     .intro__photo {
-        max-width: 90%;
+        max-width: 70%;
     }
 }
-
 
 .intro__name {
     text-align: center;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 42px;
 }
 
 .intro__second-name {
@@ -168,13 +175,7 @@
     font-size: 24px;
     color: rgba(0,0,0,0.5);
 }
-.personal__text {
-    text-indent: 30px;
-    line-height: 36px;
-}
-.contacts {
 
-}
 .contacts__list {
     list-style: none;
     margin: 0 0 20px 0;
@@ -209,4 +210,48 @@
 }
 .discord::before {
     background: purple;
+}
+.work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #E7EAEF;
+    max-width: 100%;
+}
+@media (min-width:800px) {
+    .work {
+        margin: 0 0 0 40px; 
+        max-width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .work {
+        max-width: 65%;
+    }
+}
+
+.work__section {
+    max-width: 100%;
+}
+.work__title {
+    text-align: center;
+    text-transform: uppercase;
+    background: #8B9D77;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 36px;
+}
+.work__text {
+    padding: 0 20px;
+    margin: 0 0 20px 0;
+    text-indent: 30px;
+    line-height: 36px;
+}
+.work__code {
+    overflow: scroll;
+    max-width: 100%;
+    display:block;
+    padding: 20px 20px 20px 40px;
+    background-color: #217074;
+    color: #ffffff;
 }
